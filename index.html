@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content='We propose a training-free guided diffusion framework that can generate high quality samples with minimal additional resources.'>
-  <meta property="og:title" content="MPGD: Manifold Preserving Guided Diffusion"/>
-  <meta property="og:description" content="We propose a training-free guided diffusion framework that can generate high quality samples with minimal additional resources."/>
-  <meta property="og:url" content="https://kellyyutonghe.github.io/mpgd/"/>
+  <meta name="description" content='We propose an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models.'>
+  <meta property="og:title" content="PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation"/>
+  <meta property="og:description" content="We propose an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models."/>
+  <meta property="og:url" content="https://kellyyutonghe.github.io/prism/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/intro_figure.png" />
   <meta property="og:image:width" content="2048"/>
@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
-  <title>Manifold Preserving Guided Diffusion</title>
-  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <title>PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/prism_beige_circle.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,39 +52,36 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><span style="color: red;">M</span>anifold <span style="color: red;">P</span>reserving
-              <span style="color: red;">G</span>uided <span style="color: red;">D</span>iffusion</h1>
+            <h1 class="title is-1 publication-title">PRISM: Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://kellyyutonghe.github.io/" target="_blank">Yutong He</a><sup>*♨1,2</sup>,</span>
+                <a href="https://kellyyutonghe.github.io/" target="_blank">Yutong He</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=oyuTmwoAAAAJ&hl=ja" target="_blank">Naoki Murata</a><sup>*2</sup>,</span>
+                <a href="https://arobey1.github.io/" target="_blank"> Alexander Robey</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://chiehhsinjesselai.github.io/ChiehHsinLai/" target="_blank">Chieh-Hsin Lai</a><sup>2</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=oyuTmwoAAAAJ&hl=ja" target="_blank">Naoki Murata</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=ahqdEYUAAAAJ&hl=en" target="_blank">Yuhta Takida</a><sup>2</sup>,</span>
+                <a href="https://yidingjiang.github.io/" target="_blank">Yiding Jiang</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://dblp.org/pid/204/3391.html" target="_blank">Toshimitsu Uesaka</a><sup>2</sup>,</span>
+                <a href="https://jnwilliams.github.io/" target="_blank">Joshua Nathaniel Williams</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://sites.google.com/view/dongjun-kim" target="_blank">Dongjun Kim</a><span><sup>♨2</sup></span>,</span>
+                <a href="https://www.georgejpappas.org/" target="_blank">George J. Pappas</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://dblp.org/pid/18/4227.html" target="_blank">Wei-Hsiang Liao</a><sup>2</sup>,</span>
+                <a href="https://www.seas.upenn.edu/~hassani/" target="_blank">Hamed Hassani</a><span><sup>2</sup></span>,</span>
               <span class="author-block">
-                <a href="https://www.yukimitsufuji.com/" target="_blank">Yuki Mitsufuji</a><sup>2,3</sup>,</span>
-              <span class="author-block">
-                <a href="https://zicokolter.com/" target="_blank">J. Zico Kolter</a><sup>1</sup>,</span>
+                <a href="https://www.yukimitsufuji.com/" target="_blank">Yuki Mitsufuji</a><sup>3,4</sup>,</span>
               <span class="author-block">
                 <a href="https://www.cs.cmu.edu/~rsalakhu/" target="_blank">Ruslan Salakhutdinov</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://cs.stanford.edu/~ermon/" target="_blank">Stefano Ermon</a><sup>4</sup></span>
+                <a href="https://zicokolter.com/" target="_blank">J. Zico Kolter</a><sup>1,5</sup>,</span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>Sony AI, <sup>3</sup>Sony Group Corporation, <sup>4</sup>Stanford University<br></span>
-              <span class="eql-cntrb"><small><br><sup>❋</sup>Equal Contribution</small></span>
-              <span class="eql-cntrb"><small><br><sup>♨</sup>Internship at Sony AI</small></span>
-              <span class="eql-cntrb"><br><b>ICLR 2024</b></span>
+              <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>University of Pennsylvania, <sup>3</sup>Sony AI, <sup>4</sup>Sony Group Corporation, <sup>5</sup>Bosch Center for AI<br></span>
+              <!-- <span class="eql-cntrb"><small><br><sup>❋</sup>Equal Contribution</small></span> -->
+              <!-- <span class="eql-cntrb"><small><br><sup>♨</sup>Internship at Sony AI</small></span> -->
+              <!-- <span class="eql-cntrb"><br><b>ICLR 2024</b></span> -->
             </div>
             
                 <div class="column has-text-centered">
@@ -113,18 +110,18 @@
                   </a>
                 </span>
                     <span class="link-block">
-                      <a href="https://openreview.net/pdf?id=o3BxOLoxm1" target="_blank"
+                      <a href="static/pdfs/paper.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>ICLR 2024 Paper</span>
+                      <span>Paper</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/KellyYutongHe/mpgd_pytorch/" target="_blank"
+                    <a href="https://github.com/KellyYutongHe/prism/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -146,9 +143,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/intro_figure.png">
+      <img src="static/images/intro-1.png">
       <h2 class="subtitle has-text-centered">
-        Our proposed MPGD as a training-free sampling method for both pre-trained pixel-space diffusion models and latent diffusion models in a variety of conditional generation applications. MPGD can be applied to a broad range of tasks with minimal sampling time and high sample quality.
+        Given a set of reference images, our method, PRISM, is capable of creating human-interpretable and accurate prompts for the desired concept that are also transferable to both open-sourced and closed-sourced text-to-image models.
       </h2>
     </div>
   </div>
@@ -187,7 +184,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Despite the recent advancements, conditional image generation still faces challenges of cost, generalizability, and the need for task-specific training. In this paper, we propose Manifold Preserving Guided Diffusion (<b>MPGD</b>), a training-free conditional generation framework that leverages pretrained diffusion models and off-the-shelf neural networks with minimal additional inference cost for a broad range of tasks. Specifically, we leverage the manifold hypothesis to refine the guided diffusion steps and introduce a shortcut algorithm in the process. We then propose two methods for on-manifold training-free guidance using pre-trained autoencoders and demonstrate that our shortcut inherently preserves the manifolds when applied to latent diffusion models. Our experiments show that MPGD is efficient and effective for solving a variety of conditional generation applications in low-compute settings, and can consistently offer up to 3.8× speed-ups with the same number of diffusion steps while maintaining high sample quality compared to the baselines.
+            Prompt engineering is effective for controlling the output of text-to-image (T2I) generative models, but it is also laborious due to the need for manually crafted prompts. This challenge has spurred the development of algorithms for automated prompt generation. However, these methods often struggle with transferability across T2I models, require white-box access to the underlying model, and produce non-intuitive prompts. In this work, we introduce PRISM, an algorithm that automatically identifies human-interpretable and transferable prompts that can effectively generate desired concepts given only black-box access to T2I models. Inspired by large language model (LLM) jailbreaking, PRISM leverages the in-context learning ability of LLMs to iteratively refine the candidate prompts distribution for given reference images. Our experiments demonstrate the versatility and effectiveness of PRISM in generating accurate prompts for objects, styles and images across multiple T2I models, including Stable Diffusion, DALL-E, and Midjourney.
           </p>
         </div>
       </div>
@@ -218,9 +215,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title is-3 has-text-centered">Proposed Method</h2>
-      <img src="static/images/pipeline.png">
+      <img src="static/images/method-1.png">
       <h2 class="subtitle has-text-centered">
-        A schematic overview of our proposed <b>MPGD</b> and an illustrative comparison with <a href="https://arxiv.org/abs/2010.02502" target="_blank">DDIM</a> and <a href="https://dps2022.github.io/diffusion-posterior-sampling-page/" target="_blank">DPS</a>.
+        An illustration of PRISM. The label “System” indicates the system prompts setups for the VLMs.
       </h2>
     </div>
   </div>
@@ -235,9 +232,9 @@
     <div class="container is-max-desktop">
       <!-- <div id="results-carousel" class="carousel results-carousel"> -->
        <!-- <div class="item"> -->
-        <img src="static/images/linear_main.png"/>
+        <img src="static/images/object-1.png"/>
         <h2 class="subtitle has-text-centered">
-          Comparing different baselines with our proposed MPGD for solving noisy linear inverse problems.
+          Qualitative results for object oriented personalized T2I generation on DreamBooth dataset.
         </h2>
       </div>
       <!-- <div class="item">
@@ -264,9 +261,9 @@
     <div class="container is-max-desktop">
       <!-- <div id="results-carousel" class="carousel results-carousel"> -->
        <!-- <div class="item"> -->
-        <img src="static/images/faceid.png"/>
+        <img src="static/images/style-1.png"/>
         <h2 class="subtitle has-text-centered">
-          Comparison of facial recognition (FaceID) guidance generation with our MPGD and baselines.
+          Qualitative results for object oriented personalized T2I generation.
         </h2>
       <!-- </div> -->
       <!-- <div class="item">
@@ -288,9 +285,9 @@
     <div class="container is-max-desktop">
       <!-- <div id="results-carousel" class="carousel results-carousel">
        <div class="item"> -->
-        <img src="static/images/style_cat_example.png"/>
+        <img src="static/images/img-1.png"/>
         <h2 class="subtitle has-text-centered">
-          Comparison of style guidance Stable Diffusion generation with our MPGD and baselines.
+          Image inversion results for different methods on different T2I models.
         </h2>
       </div>
       <!-- <div class="item">
@@ -312,9 +309,32 @@
     <div class="container is-max-desktop">
       <!-- <div id="results-carousel" class="carousel results-carousel">
        <div class="item"> -->
-        <img src="static/images/style_faceid.png"/>
+        <img src="static/images/edit-1.png"/>
         <h2 class="subtitle has-text-centered">
-          Examples of MPGD FaceID guidance Stable Diffusion generation combined with different optimization algorithms.
+          Prompt editing demonstration with Midjourney.
+        </h2>
+      </div>
+      <!-- <div class="item">
+        <img src="static/images/cityscapes1.png"/>
+        <h2 class="subtitle has-text-centered">
+          Examples and baseline comparison of generated images based on semantic segmentation map information.
+        </h2>
+      </div>
+  </div> -->
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+        <img src="static/images/multiconcept.png"/>
+        <h2 class="subtitle has-text-centered">
+          Multi-concept generation demonstration with Midjourney.
         </h2>
       </div>
       <!-- <div class="item">
@@ -421,13 +441,11 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @inproceedings{
-          he2024manifold,
-          title={Manifold Preserving Guided Diffusion},
-          author={Yutong He and Naoki Murata and Chieh-Hsin Lai and Yuhta Takida and Toshimitsu Uesaka and Dongjun Kim and Wei-Hsiang Liao and Yuki Mitsufuji and J Zico Kolter and Ruslan Salakhutdinov and Stefano Ermon},
-          booktitle={The Twelfth International Conference on Learning Representations},
-          year={2024},
-          url={https://openreview.net/forum?id=o3BxOLoxm1}
+        @article{he2024automated,
+          title={Automated Black-box Prompt Engineering for Personalized Text-to-Image Generation},
+          author={He, Yutong and Robey, Alexander and Murata, Naoki and Jiang, Yiding and Williams, Joshua Nathaniel and Pappas, George J and Hassani, Hamed and Mitsufuji, Yuki and Salakhutdinov, Ruslan and Kolter, J Zico},
+          journal={arXiv preprint arXiv:2403.19103},
+          year={2024}
         }
       </code></pre>
     </div>
